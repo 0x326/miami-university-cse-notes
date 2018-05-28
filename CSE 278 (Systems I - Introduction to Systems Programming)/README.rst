@@ -6,9 +6,7 @@ CSE 278 (Systems I: Introduction to Systems Programming)
 It is recommended to read these samples in intelligent IDEs such as CLion_
 since they often give useful tips and error info.
 
-Each folder has a ``Makefile`` where the examples can be executed by running:
-
-..code:: shell
+Each folder has a ``Makefile`` where the examples can be executed by running::
 
   make
 
