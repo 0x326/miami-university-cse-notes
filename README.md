@@ -1,5 +1,4 @@
-CSE Notes
-=========
+# CSE Notes
 
 Some of my computer science courses require very detailed and comprehensive notes.
 Since my notes have been very helpful to me, I occurred to me that someone else
