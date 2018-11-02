@@ -59,3 +59,6 @@ add_executable(CSE_381_IPC_SHARED_MEMORY
 
 add_executable(CSE_381_NETWORKING_SERVER
         "CSE 381 (Systems II - OS, Currency, Virtualization, and Security)/Networking/server.c")
+
+add_executable(CSE_381_SIMPLE_SHELL
+        "CSE 381 (Systems II - OS, Currency, Virtualization, and Security)/Simple Shell/main.c")
