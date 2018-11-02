@@ -40,3 +40,22 @@ add_executable(CSE_278_OVERLOADING_OPERATORS
 
 add_executable(CSE_278_MISC
         "CSE 278 (Systems I - Introduction to Systems Programming)/Misc/main.cpp")
+
+# CSE 381
+add_executable(CSE_381_DATA_STRUCTURES_VECTOR
+        "CSE 381 (Systems II - OS, Currency, Virtualization, and Security)/C++ Data Structures/vector.cpp")
+
+add_executable(CSE_381_DATA_STRUCTURES_UNORDERED_MAP
+        "CSE 381 (Systems II - OS, Currency, Virtualization, and Security)/C++ Data Structures/unordered_map.cpp")
+
+add_executable(CSE_381_CONSOLE_IO
+        "CSE 381 (Systems II - OS, Currency, Virtualization, and Security)/Console IO/main.c")
+
+add_executable(CSE_381_IPC_PIPES
+        "CSE 381 (Systems II - OS, Currency, Virtualization, and Security)/IPC (Interprocess Communication)/pipes.c")
+
+add_executable(CSE_381_IPC_SHARED_MEMORY
+        "CSE 381 (Systems II - OS, Currency, Virtualization, and Security)/IPC (Interprocess Communication)/shared-memory.c")
+
+add_executable(CSE_381_NETWORKING_SERVER
+        "CSE 381 (Systems II - OS, Currency, Virtualization, and Security)/Networking/server.c")
