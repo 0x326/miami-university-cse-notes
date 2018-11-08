@@ -33,15 +33,14 @@ int main(int argc, char *argv[]) {
         return EXIT_FAILURE;
     }
 
+    // Build socket configuration
     struct sockaddr_in server_address;
-
     bzero((char *) &server_address, sizeof(server_address));
-
     server_address.sin_family = AF_INET;
     server_address.sin_port = htons(port_number);
     server_address.sin_addr.s_addr = INADDR_ANY;
 
-    // Listen
+    // Apply scoket configuration and listen for connections
     if (bind(socket_file_descriptor, (struct sockaddr *) &server_address, sizeof(server_address)) < 0) {
         fputs(stderr, "Cannot bind socket\n");
         return EXIT_FAILURE;
