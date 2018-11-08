@@ -25,7 +25,7 @@
 [Wikipedia-Task_parallelism]: https://en.wikipedia.org/wiki/Task_parallelism
 [Wikipedia-Data_parallelism]: https://en.wikipedia.org/wiki/Data_parallelism
 [Wikipedia-Pipeline]: https://en.wikipedia.org/wiki/Pipeline_(computing)
-[Wikipedia-JFS]: https://en.wikipedia.org/wiki/JFS_(file_system)
+[Wikipedia-Journaling_file_system]: https://en.wikipedia.org/wiki/Journaling_file_system
 
 # CSE 381: Systems II - OS, Currency, Virtualization, and Security
 
@@ -73,7 +73,7 @@
     - [Task parallelism][Wikipedia-Task_parallelism]
 
 - [CPU pipeline][Wikipedia-Pipeline]
-- [Journaled file system][Wikipedia-JFS]
+- [Journaling file system][Wikipedia-Journaling_file_system]
 
 ## Helpful links
 
