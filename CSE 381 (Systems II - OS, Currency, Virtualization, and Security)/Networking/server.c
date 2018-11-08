@@ -41,8 +41,6 @@ int main(int argc, char *argv[]) {
     server_address.sin_port = htons(port_number);
     server_address.sin_addr.s_addr = INADDR_ANY;
 
-    char buffer[BUFFER_SIZE];
-
     // Listen
     if (bind(socket_file_descriptor, (struct sockaddr *) &server_address, sizeof(server_address)) < 0) {
         fputs(stderr, "Cannot bind socket\n");
@@ -58,11 +56,11 @@ int main(int argc, char *argv[]) {
         fputs(stderr, "Cannot accept TCP connection from socket\n");
         return EXIT_FAILURE;
     }
-    bzero(buffer, 256);
 
     // Read
-    ssize_t bytesTransfered;
-    bytesTransfered = read(clientsocket_file_descriptor, buffer, 255);
+    char buffer[BUFFER_SIZE];
+    bzero(buffer, BUFFER_SIZE);
+    ssize_t bytesTransfered = read(clientsocket_file_descriptor, buffer, BUFFER_SIZE - 1);
     if (bytesTransfered < 0) {
         fputs(stderr, "Cannot read from socket\n");
         return EXIT_FAILURE;
