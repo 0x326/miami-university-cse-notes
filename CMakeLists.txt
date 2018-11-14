@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.9)
-project(CSE_381)
+project(MIAMI_UNIVERSITY_CSE_NOTES)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_C_STANDARD 11)
