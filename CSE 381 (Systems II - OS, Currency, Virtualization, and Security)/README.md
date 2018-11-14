@@ -91,3 +91,5 @@
 - https://en.wikipedia.org/wiki/Pipeline_(computing)
 - https://en.wikipedia.org/wiki/Hyper-threading
 - https://en.wikipedia.org/wiki/CPU_cache#Cache_miss
+- https://stackoverflow.com/a/32941238
+- https://stackoverflow.com/a/8514943
