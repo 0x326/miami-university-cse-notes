@@ -13,18 +13,18 @@ int main(int argc, char *argv[]) {
     // Parse commandline parameters
     if (argc == 1) {
         fprintf(stdout, "Usage: %s PORT\n", argv[0]);
-        fputs(stderr, "PORT is required\n");
+        fputs("PORT is required\n", stderr);
         return EXIT_FAILURE;
     } else if (argc > 2) {
         fprintf(stdout, "Usage: %s PORT\n", argv[0]);
-        fputs(stderr, "Too many arguments provided\n");
+        fputs("Too many arguments provided\n", stderr);
         return EXIT_FAILURE;
     }
     const int port_number = atoi(argv[1]);
 
     int socket_file_descriptor = socket(AF_INET, SOCK_STREAM, 0);
     if (socket_file_descriptor < 0) {
-        fputs(stderr, "Cannot create IPv4 socket\n");
+        fputs("Cannot create IPv4 socket\n", stderr);
         return EXIT_FAILURE;
     }
 
@@ -37,7 +37,7 @@ int main(int argc, char *argv[]) {
 
     // Apply scoket configuration and listen for connections
     if (bind(socket_file_descriptor, (struct sockaddr *) &server_address, sizeof(server_address)) < 0) {
-        fputs(stderr, "Cannot bind socket\n");
+        fputs("Cannot bind socket\n", stderr);
         return EXIT_FAILURE;
     }
     listen(socket_file_descriptor, INCOMING_CONNECTIONS_TO_QUEUE);
@@ -47,7 +47,7 @@ int main(int argc, char *argv[]) {
     socklen_t client_address_length = sizeof(client_address);
     int clientsocket_file_descriptor = accept(socket_file_descriptor, (struct sockaddr *) &client_address, &client_address_length);
     if (clientsocket_file_descriptor < 0) {
-        fputs(stderr, "Cannot accept TCP connection from socket\n");
+        fputs("Cannot accept TCP connection from socket\n", stderr);
         return EXIT_FAILURE;
     }
 
@@ -56,7 +56,7 @@ int main(int argc, char *argv[]) {
     bzero(buffer, BUFFER_SIZE);
     ssize_t bytesTransfered = read(clientsocket_file_descriptor, buffer, BUFFER_SIZE - 1);
     if (bytesTransfered < 0) {
-        fputs(stderr, "Cannot read from socket\n");
+        fputs("Cannot read from socket\n", stderr);
         return EXIT_FAILURE;
     }
     printf("Got message: %s\n", buffer);
@@ -64,12 +64,12 @@ int main(int argc, char *argv[]) {
     // Write
     bytesTransfered = write(clientsocket_file_descriptor, "Received message: ", 18);
     if (bytesTransfered < 0) {
-        fputs(stderr, "Cannot write to socket\n");
+        fputs("Cannot write to socket\n", stderr);
         return EXIT_FAILURE;
     }
     bytesTransfered = write(clientsocket_file_descriptor, buffer, BUFFER_SIZE);
     if (bytesTransfered < 0) {
-        fputs(stderr, "Cannot write to socket\n");
+        fputs("Cannot write to socket\n", stderr);
         return EXIT_FAILURE;
     }
 
