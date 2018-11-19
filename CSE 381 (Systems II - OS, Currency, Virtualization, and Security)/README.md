@@ -93,3 +93,8 @@
 - https://en.wikipedia.org/wiki/CPU_cache#Cache_miss
 - https://stackoverflow.com/a/32941238
 - https://stackoverflow.com/a/8514943
+- https://serverfault.com/a/38817
+- https://stackoverflow.com/a/12769035
+- https://stackoverflow.com/a/2109363
+- https://www.kernel.org/doc/html/latest/filesystems/ext4/index.html
+- https://unix.stackexchange.com/a/153640
