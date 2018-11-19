@@ -9,11 +9,6 @@
 #define BUFFER_SIZE 256
 #define INCOMING_CONNECTIONS_TO_QUEUE 5
 
-void error(char *msg) {
-    perror(msg);
-    exit(1);
-}
-
 int main(int argc, char *argv[]) {
     // Parse commandline parameters
     if (argc == 1) {
