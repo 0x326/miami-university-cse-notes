@@ -106,3 +106,8 @@
 - https://en.wikipedia.org/wiki/Core_dump
 - https://stackoverflow.com/q/16643180
 - https://stackoverflow.com/a/40002566
+- https://en.wikipedia.org/wiki/Page_table
+- https://en.wikipedia.org/wiki/Dirty_bit
+- https://en.wikipedia.org/wiki/Paging
+- https://en.wikipedia.org/wiki/Page_Size_Extension
+- https://en.wikipedia.org/wiki/CPUID
