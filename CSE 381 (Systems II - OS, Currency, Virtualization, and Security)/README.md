@@ -122,3 +122,7 @@
 - https://stackoverflow.com/a/4800535
 - https://defuse.ca/blog/why-unsafe-state-deadlock.html
 - https://cs.stackexchange.com/a/45149
+- https://stackoverflow.com/a/247026
+- https://stackoverflow.com/a/19194580
+- https://en.wikipedia.org/wiki/Cache_replacement_policies
+- https://en.wikipedia.org/wiki/Page_(computer_memory)
