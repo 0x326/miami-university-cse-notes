@@ -98,3 +98,11 @@
 - https://stackoverflow.com/a/2109363
 - https://www.kernel.org/doc/html/latest/filesystems/ext4/index.html
 - https://unix.stackexchange.com/a/153640
+- https://youtu.be/2quKyPnUShQ
+- https://stackoverflow.com/a/17478535
+- https://en.wikipedia.org/wiki/Fragmentation_(computing)
+- https://en.wikipedia.org/wiki/Memory_segmentation
+- https://en.wikipedia.org/wiki/Segmentation_fault
+- https://en.wikipedia.org/wiki/Core_dump
+- https://stackoverflow.com/q/16643180
+- https://stackoverflow.com/a/40002566
