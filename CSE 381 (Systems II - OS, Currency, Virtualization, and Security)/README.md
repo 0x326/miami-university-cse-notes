@@ -29,6 +29,10 @@
 
 # CSE 381: Systems II - OS, Currency, Virtualization, and Security
 
+## Open course material
+
+- https://github.com/angrave/SystemProgramming/wiki
+
 ## Topics
 
 - [User mode vs. Kernel mode][Wikipedia-Protection_ring]
@@ -111,3 +115,10 @@
 - https://en.wikipedia.org/wiki/Paging
 - https://en.wikipedia.org/wiki/Page_Size_Extension
 - https://en.wikipedia.org/wiki/CPUID
+- https://en.wikipedia.org/wiki/Wait-for_graph
+- https://en.wikipedia.org/wiki/Round-robin_scheduling
+- https://en.wikipedia.org/wiki/Multilevel_queue
+- https://en.wikipedia.org/wiki/Multilevel_feedback_queue
+- https://stackoverflow.com/a/4800535
+- https://defuse.ca/blog/why-unsafe-state-deadlock.html
+- https://cs.stackexchange.com/a/45149
