@@ -64,6 +64,9 @@ add_executable(CSE_381_IPC_PIPES
 add_executable(CSE_381_IPC_SHARED_MEMORY
         "CSE 381 (Systems II - OS, Currency, Virtualization, and Security)/IPC (Interprocess Communication)/shared-memory.c")
 
+add_executable(CSE_381_NETWORKING_CLIENT
+        "CSE 381 (Systems II - OS, Currency, Virtualization, and Security)/Networking/client.c")
+
 add_executable(CSE_381_NETWORKING_SERVER
         "CSE 381 (Systems II - OS, Currency, Virtualization, and Security)/Networking/server.c")
 
