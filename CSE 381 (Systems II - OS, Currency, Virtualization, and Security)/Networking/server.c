@@ -35,7 +35,7 @@ int main(int argc, char *argv[]) {
     server_address.sin_port = htons(port_number);
     server_address.sin_addr.s_addr = INADDR_ANY;
 
-    // Apply scoket configuration and listen for connections
+    // Apply socket configuration and listen for connections
     if (bind(socket_file_descriptor, (struct sockaddr *) &server_address, sizeof(server_address)) < 0) {
         fputs("Cannot bind socket\n", stderr);
         return EXIT_FAILURE;
