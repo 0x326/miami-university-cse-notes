@@ -45,8 +45,8 @@ int main(int argc, char *argv[]) {
     // Accept connection
     struct sockaddr_in client_address;
     socklen_t client_address_length = sizeof(client_address);
-    int clientsocket_file_descriptor = accept(socket_file_descriptor, (struct sockaddr *) &client_address, &client_address_length);
-    if (clientsocket_file_descriptor < 0) {
+    int client_socket_file_descriptor = accept(socket_file_descriptor, (struct sockaddr *) &client_address, &client_address_length);
+    if (client_socket_file_descriptor < 0) {
         fputs("Cannot accept TCP connection from socket\n", stderr);
         return EXIT_FAILURE;
     }
@@ -54,7 +54,7 @@ int main(int argc, char *argv[]) {
     // Read
     char buffer[BUFFER_SIZE];
     bzero(buffer, BUFFER_SIZE);
-    ssize_t bytes_transferred = read(clientsocket_file_descriptor, buffer, BUFFER_SIZE - 1);
+    ssize_t bytes_transferred = read(client_socket_file_descriptor, buffer, BUFFER_SIZE - 1);
     if (bytes_transferred < 0) {
         fputs("Cannot read from socket\n", stderr);
         return EXIT_FAILURE;
@@ -62,12 +62,12 @@ int main(int argc, char *argv[]) {
     printf("Got message: %s\n", buffer);
 
     // Write
-    bytes_transferred = write(clientsocket_file_descriptor, "Received message: ", 18);
+    bytes_transferred = write(client_socket_file_descriptor, "Received message: ", 18);
     if (bytes_transferred < 0) {
         fputs("Cannot write to socket\n", stderr);
         return EXIT_FAILURE;
     }
-    bytes_transferred = write(clientsocket_file_descriptor, buffer, BUFFER_SIZE);
+    bytes_transferred = write(client_socket_file_descriptor, buffer, BUFFER_SIZE);
     if (bytes_transferred < 0) {
         fputs("Cannot write to socket\n", stderr);
         return EXIT_FAILURE;
