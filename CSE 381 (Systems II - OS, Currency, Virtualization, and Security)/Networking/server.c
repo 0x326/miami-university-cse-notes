@@ -54,21 +54,21 @@ int main(int argc, char *argv[]) {
     // Read
     char buffer[BUFFER_SIZE];
     bzero(buffer, BUFFER_SIZE);
-    ssize_t bytesTransfered = read(clientsocket_file_descriptor, buffer, BUFFER_SIZE - 1);
-    if (bytesTransfered < 0) {
+    ssize_t bytes_transferred = read(clientsocket_file_descriptor, buffer, BUFFER_SIZE - 1);
+    if (bytes_transferred < 0) {
         fputs("Cannot read from socket\n", stderr);
         return EXIT_FAILURE;
     }
     printf("Got message: %s\n", buffer);
 
     // Write
-    bytesTransfered = write(clientsocket_file_descriptor, "Received message: ", 18);
-    if (bytesTransfered < 0) {
+    bytes_transferred = write(clientsocket_file_descriptor, "Received message: ", 18);
+    if (bytes_transferred < 0) {
         fputs("Cannot write to socket\n", stderr);
         return EXIT_FAILURE;
     }
-    bytesTransfered = write(clientsocket_file_descriptor, buffer, BUFFER_SIZE);
-    if (bytesTransfered < 0) {
+    bytes_transferred = write(clientsocket_file_descriptor, buffer, BUFFER_SIZE);
+    if (bytes_transferred < 0) {
         fputs("Cannot write to socket\n", stderr);
         return EXIT_FAILURE;
     }
