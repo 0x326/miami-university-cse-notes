@@ -20,7 +20,7 @@ arr = {1, 2, 3, 4, 5}; // Each element is initialized to their respective values
 Object[] objArr = new Object[5]; // Each element is initialized to null
 // initializes each element with an object
 for (int i = 0; i < objArr.length; i++) {
-  objArr[i] = new Object();
+    objArr[i] = new Object();
 }
 ```
 
@@ -38,11 +38,11 @@ names.set(0, "Bar");
 names.add(0, "Foobar");
 // Both are acceptable
 for (int i = 0; i < names.size(); i++) {
-  String name = names.get(i);
-  // Do stuff
+    String name = names.get(i);
+    // Do stuff
 }
 for (String name : names) {
-  // Do stuff
+    // Do stuff
 }
 ```
 
@@ -60,8 +60,8 @@ File inputFile = new File("path/to/file");
 Scanner in = new Scanner(inputFile);
 // in.useDelimiter(''); // Optionally, to read character by character
 while (in.haxNext()) {
-  String word = in.next();
-  // Do stuff
+    String word = in.next();
+    // Do stuff
 }
 in.close();
 ```
@@ -69,14 +69,14 @@ in.close();
 ```java
 File outputFile = new File("path/to/file");
 try {
-  PrintWriter out = new PrintWriter(outputFile);
-  out.println("Hello world!");
+    PrintWriter out = new PrintWriter(outputFile);
+    out.println("Hello world!");
 }
 catch (Exception e) {
-  // Catch some Exception
+    // Catch some Exception
 }
 finally {
-  out.close();
+    out.close();
 }
 ```
 
@@ -87,38 +87,38 @@ There are two types of exceptions: unchecked and checked exceptions. Unchecked e
 ```java
 System.out.println("Start");
 try {
-  // Any exception in this block will be handled by the appropriate catch block in this block level
-  try {
     // Any exception in this block will be handled by the appropriate catch block in this block level
-    System.out.println("Let's try this");
-    int[] arr = null;
-    int foo = 8 / 0; // Throws an ArithmeticException
-    foo = arr[0]; // Throws a NullPointerException; Does not execute due to exception before it
-  }
-  // At least one catch is required
-  catch (NullPointerException e) {
-    // Only NullPointerException's exceptions are handled here
-    // So, in this case, this code will never execute
-    System.out.println("Handling NullPointerException");
-  }
-  // finally is optional
-  finally {
-    // Always executes:
-    //   1. After the successful completion of the try block
-    //   2. After the execution of the appropriate catch block in this try-catch-finally bundle
-    //   3. Before going up the stack if none of the previous catch blocks can handle the exception
-    System.out.println("Executing inner `finally`");
-  }
+    try {
+        // Any exception in this block will be handled by the appropriate catch block in this block level
+        System.out.println("Let's try this");
+        int[] arr = null;
+        int foo = 8 / 0; // Throws an ArithmeticException
+        foo = arr[0]; // Throws a NullPointerException; Does not execute due to exception before it
+    }
+    // At least one catch is required
+    catch (NullPointerException e) {
+        // Only NullPointerException's exceptions are handled here
+        // So, in this case, this code will never execute
+        System.out.println("Handling NullPointerException");
+    }
+    // finally is optional
+    finally {
+        // Always executes:
+        //   1. After the successful completion of the try block
+        //   2. After the execution of the appropriate catch block in this try-catch-finally bundle
+        //   3. Before going up the stack if none of the previous catch blocks can handle the exception
+        System.out.println("Executing inner `finally`");
+    }
 }
 catch (ArithmeticException e) {
-  // Only ArithmeticException's exceptions are handled here
-  // In this case, this code will always executes
-  System.out.println("Handling ArithmeticException");
+    // Only ArithmeticException's exceptions are handled here
+    // In this case, this code will always executes
+    System.out.println("Handling ArithmeticException");
 }
 finally {
-  // Always executes
-  // Good for closing `Scanners`
-  System.out.println("Executing outer `finally`");
+    // Always executes
+    // Good for closing `Scanners`
+    System.out.println("Executing outer `finally`");
 }
 System.out.println("End");
 ```
@@ -154,27 +154,27 @@ Every class ought to have a constructor and every instance variable ought to be 
 
 ```java
 public class Foo {
-  private int foo;
-  // Must have the same name as the class
-  public Foo() {
-    // This provides a default value
-    this(0); // must be first statement
-  }
-  // Can be overloaded
-  public Foo(int foo) {
-    // the left-side variable is the implicit variable; it refers to the declaration above
-    // the right-side assignment is the explicit variable; it is an argument passed to the Constructor
-    // if the argument's name did not coincide with the implicit variable's name,
-    //   then, the implicit variable could be referenced as `foo` instead of `this.foo`
-    this.foo = foo;
-  }
+    private int foo;
+    // Must have the same name as the class
+    public Foo() {
+        // This provides a default value
+        this(0); // must be first statement
+    }
+    // Can be overloaded
+    public Foo(int foo) {
+        // the left-side variable is the implicit variable; it refers to the declaration above
+        // the right-side assignment is the explicit variable; it is an argument passed to the Constructor
+        // if the argument's name did not coincide with the implicit variable's name,
+        //   then, the implicit variable could be referenced as `foo` instead of `this.foo`
+        this.foo = foo;
+    }
 
-  /**
-   * A getter
-   */
-  public void getFoo() {
-    return foo;
-  }
+    /**
+     * A getter
+     */
+    public void getFoo() {
+        return foo;
+    }
 }
 ```
 
@@ -186,37 +186,37 @@ A class can inherit variables and methods from a parent class (a subclass from a
 
 ```java
 public class Parent {
-  private int foo;
-  public void doStuff() {
-    doStuff(1);
-  }
-  // Overload
-  public void doStuff(int value) {
-    // Do something
-  }
+    private int foo;
+    public void doStuff() {
+        doStuff(1);
+    }
+    // Overload
+    public void doStuff(int value) {
+        // Do something
+    }
 }
 ```
 ```java
 public class Foo extends Parent {
-  // When Foo is instantiated, .doStuff can be called on it because Foo extends Parent
+    // When Foo is instantiated, .doStuff can be called on it because Foo extends Parent
 
-  // However, if we need more functionality, we can override it
-  @Override
-  public void doStuff() {
-    super.doStuff(); // Calls to the original doStuff method
-    // Do additional stuff
-  }
+    // However, if we need more functionality, we can override it
+    @Override
+    public void doStuff() {
+        super.doStuff(); // Calls to the original doStuff method
+        // Do additional stuff
+    }
 
-  // It is also tipical to override these methods
-  @Override
-  public String toString() {
-    return "";
-  }
-  @Override
-  public int compareTo(Foo f) {
-    // Some real object here
-    return 0;
-  }
+    // It is also tipical to override these methods
+    @Override
+    public String toString() {
+        return "";
+    }
+    @Override
+    public int compareTo(Foo f) {
+        // Some real object here
+        return 0;
+    }
 }
 ```
 
@@ -227,14 +227,14 @@ Using inheritance for processing objects of different types in the same program.
 
 ```java
 public class MyClass {
-  public void doStuff(Object obj) {
-    // obj could be an Object, but it could be a SpecificSubClass as well
-    if (obj instanceof SpecificSubClass) {
-      // If `obj` is a SpecificSubClass, then its variable can be casted to that type
-      // If it is not, the following will produce an exception
-      SpecificSubClass newObj = (SpecificSubClass) obj;
+    public void doStuff(Object obj) {
+        // obj could be an Object, but it could be a SpecificSubClass as well
+        if (obj instanceof SpecificSubClass) {
+        // If `obj` is a SpecificSubClass, then its variable can be casted to that type
+        // If it is not, the following will produce an exception
+        SpecificSubClass newObj = (SpecificSubClass) obj;
+        }
     }
-  }
 }
 ```
 
@@ -249,13 +249,13 @@ The using of only the required details
 ```java
 // This class cannot be instantiated
 public abstract class Account { // Must be abstract if contains abstract methods
-  // Purposefully unimplemented method; Must be implemented in a sub class
-  public abstract void deducFees();
+    // Purposefully unimplemented method; Must be implemented in a sub class
+    public abstract void deducFees();
 }
 public class SavingsAccount extends Account {
-  public void deducFees() {
-    // Provide an implementation
-  }
+    public void deducFees() {
+        // Provide an implementation
+    }
 }
 ```
 
@@ -274,24 +274,24 @@ Ex: the `Comparable` interface. It enables `java.util.Arrays.sort()` to work.
 ```java
 // An interface contains the return type, the name, and the parameter variables
 interface MyInterface {
-  double getMeasure(); // equivalent to `public abstract`; need implementation;
+    double getMeasure(); // equivalent to `public abstract`; need implementation;
 }
 ```
 ```java
 class BankAccount implements MyInterface {
-  private double balance = 0;
+    private double balance = 0;
 
-  public double getMeasure() {
-    return balance;
-  }
+    public double getMeasure() {
+        return balance;
+    }
 }
 ```
 ```java
 public class Foo {
-  public static double average(MyInterface[] objects) {
-    // Do stuff
-    // Works for any class which implements MyInterface
-  }
+    public static double average(MyInterface[] objects) {
+        // Do stuff
+        // Works for any class which implements MyInterface
+    }
 }
 ```
 
@@ -301,10 +301,10 @@ Copying a primitive value is easy (a shallow copy) but copying an object is more
 
 ```java
 public class Foo {
-  // The following is a copy constructor. It merely copies the properties of the object passed to it
-  public Foo(Foo obj) {
-    this(obj.getFoo());
-  }
+    // The following is a copy constructor. It merely copies the properties of the object passed to it
+    public Foo(Foo obj) {
+        this(obj.getFoo());
+    }
 }
 ```
 
@@ -494,12 +494,17 @@ package com.packagename;
 ## Design Process
 
 1. Software requirements
-  - Helpful to include typical scenarios
+
+    - Helpful to include typical scenarios
+
 2. Software design
-  - Identify nouns and verbs
+
+    - Identify nouns and verbs
+
 3. Software construction
 4. Software testing
-  - checks to see whether requirements are met
+
+    - checks to see whether requirements are met
 
 Tactical classes: classes which will be used but are not part of the design.
 
@@ -511,7 +516,8 @@ Make 3-by-5 cards with the following details for each class
 
 - Responsibilities
 - Collaborators
-  - Relationships of UML diagram
+
+    - Relationships of UML diagram
 
 ## UML (Unified modeling language)
 
@@ -543,9 +549,12 @@ Special type of dependency. A dependency, in general, is a means toward an end w
 - `void pack()`: Sets to preferred size
 - `void setTitle(String title)`
 - `void setDefaultCloseOperation(int constant)`
-  - Defines what happens when the frame is closed
-    - Possible Values (not exhaustive)
-      - `static int EXIT_ON_CLOSE`
+
+    - Defines what happens when the frame is closed
+
+        - Possible Values (not exhaustive)
+        - `static int EXIT_ON_CLOSE`
+
 - `void setVisible(Boolean visibilityStatus)`
 - `void add(JComponent component)`
 
@@ -603,11 +612,11 @@ Draw on a component.
 
 ```java
 public class ChartComponent extends JComponent {
-  // Called for every needed graphical update
-  public void paintComponent(Graphics g) {
-    // Drawing instructions
-    g.fillRect(0, 10, 200, 10);
-  }
+    // Called for every needed graphical update
+    public void paintComponent(Graphics g) {
+        // Drawing instructions
+        g.fillRect(0, 10, 200, 10);
+    }
 }
 ```
 
@@ -634,19 +643,27 @@ Types of layouts
 
 - `FlowLayout` (`JPanel` default) (left to right and wrap)
 - `BorderLayout`
-  - Container is divided into regions. (Each region can hold at most one `JComponent`).
-    - `static final String BorderLayout.NORTH`
-    - `static final String BorderLayout.SOUTH`
-    - `static final String BorderLayout.EAST`
-    - `static final String BorderLayout.WEST`
-    - `static final String BorderLayout.CENTER`
-  - How to add: `panel.add(JComponent component, String layoutPositionConstant)`
+
+    - Container is divided into regions. (Each region can hold at most one `JComponent`).
+
+        - `static final String BorderLayout.NORTH`
+        - `static final String BorderLayout.SOUTH`
+        - `static final String BorderLayout.EAST`
+        - `static final String BorderLayout.WEST`
+        - `static final String BorderLayout.CENTER`
+
+    - How to add: `panel.add(JComponent component, String layoutPositionConstant)`
+
 - `GridLayout(int rows, int cols)`
-  - Container is divided into a grid, starting from left to right, up to down. All cells have same width and height.
-  - How to add
-    - `panel.add(JComponent component)`
+
+    - Container is divided into a grid, starting from left to right, up to down. All cells      have same width and height.
+    - How to add
+
+        - `panel.add(JComponent component)`
+
 - `GridBagLayout`
-  - Like `GridLayout` but more complex. Allows for variable column width and merged cells.
+
+    - Like `GridLayout` but more complex. Allows for variable column width and merged cells.
 
 ### Radio buttons
 
@@ -690,9 +707,9 @@ JMenu fileMenu = new JMenu("File");
 JMenuItem exitItem = new JMenuItem("Exit");
 
 class SomeActionListener implements ActionListener {
-  void actionPerformed(ActionEvent e) {
-    // Do something
-  }
+    void actionPerformed(ActionEvent e) {
+        // Do something
+    }
 }
 
 exitItem.addActionListener(new SomeActionListener());
@@ -707,9 +724,9 @@ JFrame.setMenuBar(bar);
 
 ```java
 class SomeActionListener implements ActionListener {
-  void actionPerformed(ActionEvent e) {
-    // Do something
-  }
+    void actionPerformed(ActionEvent e) {
+        // Do something
+    }
 }
 
 int interval = 60; // milliseconds
@@ -765,10 +782,10 @@ Pseudo-code:
 ```
 Examine ( partial solution )
 If ( accepted )
-  Then add to list of full solutions
+    Then add to list of full solutions
 Else if ( !abandoned )
-  Then for each p in partial solution
-  Solve (p)
+    Then for each p in partial solution
+    Solve (p)
 ```
 
 ## Random Access File I/O
