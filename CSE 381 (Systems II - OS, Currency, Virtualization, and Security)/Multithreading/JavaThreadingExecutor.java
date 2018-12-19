@@ -46,10 +46,14 @@ public class JavaThreadingExecutor {
         int n = Integer.parseInt(args[0]);
 
         ExecutorService pool = Executors.newSingleThreadExecutor();
-        Future<Integer> result = pool.submit(new Sigma(n));
+        Future<Integer> sumI = pool.submit(new Sigma(n, i -> i));
+        Future<Integer> sumISquared = pool.submit(new Sigma(n, i -> i * i));
+        Future<Integer> sumICubed = pool.submit(new Sigma(n, i -> i * i * i));
 
         try {
-            System.out.println("sum = " + result.get());
+            System.out.printf("Σ i  = %d\n", sumI.get());
+            System.out.printf("Σ i² = %d\n", sumISquared.get());
+            System.out.printf("Σ i³ = %d\n", sumICubed.get());
         } catch (InterruptedException | ExecutionException ie) {
             // Do nothing
         } finally {
