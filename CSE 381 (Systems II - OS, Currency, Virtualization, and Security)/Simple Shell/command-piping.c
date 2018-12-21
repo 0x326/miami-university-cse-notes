@@ -5,10 +5,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-
 #define READ_END 0
 #define WRITE_END 1
-
 
 int main() {
     // Example: "ls -l | wc -l"
