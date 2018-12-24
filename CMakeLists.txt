@@ -81,3 +81,6 @@ add_executable(CSE_381_MULTITHREADING_THREAD
 
 add_executable(CSE_381_PARALLELISM_TASK
         "CSE 381 (Systems II - OS, Currency, Virtualization, and Security)/Parallelism/Task Parallelism.c")
+
+add_executable(CSE_381_SIMPLE_SHELL
+        "CSE 381 (Systems II - OS, Currency, Virtualization, and Security)/Simple Shell/main.c")
