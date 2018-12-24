@@ -1,8 +1,5 @@
 #include <iostream>
 #include <thread>
-#include <string>
-#include <cstdlib>
-#include <unistd.h>
 
 void thread_runner(const int arg1, const std::string &arg2) {  // arg3, and so on
     std::cout << "Thread created with parameters " << arg1 << " and '" << arg2 << "'" << std::endl;

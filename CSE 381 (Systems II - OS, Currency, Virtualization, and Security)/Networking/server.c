@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <strings.h>
@@ -45,7 +44,8 @@ int main(int argc, char *argv[]) {
     // Accept connection
     struct sockaddr_in client_address;
     socklen_t client_address_length = sizeof(client_address);
-    int client_socket_file_descriptor = accept(socket_file_descriptor, (struct sockaddr *) &client_address, &client_address_length);
+    int client_socket_file_descriptor = accept(socket_file_descriptor, (struct sockaddr *) &client_address,
+                                               &client_address_length);
     if (client_socket_file_descriptor < 0) {
         fputs("Cannot accept TCP connection from socket\n", stderr);
         return EXIT_FAILURE;

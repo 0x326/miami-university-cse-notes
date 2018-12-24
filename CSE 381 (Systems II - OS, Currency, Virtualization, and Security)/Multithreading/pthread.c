@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <pthread.h>
 
-void* thread_runner(void *args_pointer) {
+void *thread_runner(void *args_pointer) {
     printf("Thread created with parameters located at %p\n", args_pointer);
 
     // Do something

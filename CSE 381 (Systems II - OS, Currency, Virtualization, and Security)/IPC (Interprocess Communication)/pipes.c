@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <sys/types.h>
 #include <string.h>
 #include <unistd.h>
 
 #define BUFFER_SIZE 25
 #define READ_END 0
 #define WRITE_END 1
-int main(int argc, char** argv) {
+
+int main(int argc, char **argv) {
     int pipe_file_descriptors[2];
     if (pipe(pipe_file_descriptors) == -1) {
-        fprintf(stderr, "Cannot create pipe\n"); // Perhaps the system is out of file descriptors?
+        fprintf(stderr, "Cannot create pipe\n");  // Perhaps the system is out of file descriptors?
     }
 
     fflush(stdin);
@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
         printf("Got message: %s\n", message);
 
         // Close pipe when finished
-        close (pipe_file_descriptors[READ_END]);
+        close(pipe_file_descriptors[READ_END]);
     } else {
         fputs("Cannot fork to create child process\n", stderr);
         return EXIT_FAILURE;

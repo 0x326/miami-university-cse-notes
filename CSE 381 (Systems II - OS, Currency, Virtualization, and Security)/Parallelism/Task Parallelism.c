@@ -7,7 +7,7 @@ int sumISquared = 0;
 int sumICubed = 0;
 
 void *computeSumI(void *arg_pointer) {
-    int n = *((int*) arg_pointer);
+    int n = *((int *) arg_pointer);
     sumI = n * (n + 1) / 2;
 
     return NULL;
@@ -15,7 +15,7 @@ void *computeSumI(void *arg_pointer) {
 }
 
 void *computeSumISquared(void *arg_pointer) {
-    int n = *((int*) arg_pointer);
+    int n = *((int *) arg_pointer);
     sumISquared = n * (n + 1) * (2 * n + 1) / 6;
 
     return NULL;
@@ -23,7 +23,7 @@ void *computeSumISquared(void *arg_pointer) {
 }
 
 void *computeSumICubed(void *arg_pointer) {
-    int n = *((int*) arg_pointer);
+    int n = *((int *) arg_pointer);
     sumICubed = n * (n + 1) / 2;
     sumICubed *= sumICubed;
 

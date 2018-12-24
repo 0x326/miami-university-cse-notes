@@ -1,6 +1,5 @@
 // Must be compiled with -fopenmp flag to enable OpenMP
 
-#include <omp.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

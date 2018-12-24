@@ -1,6 +1,5 @@
 #include <iostream>
 #include <unordered_map>
-#include <string>
 
 int main() {
     std::unordered_map<std::string, int> map;
@@ -10,7 +9,7 @@ int main() {
     map.insert({"Baz", 3});
     map["Baz"] *= 2;
 
-    for (std::pair<std::string, int> item : map) {
+    for (const auto &item : map) {
         std::cout << item.first << " :: " << item.second << std::endl;
     }
 

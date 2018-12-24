@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <netdb.h>
@@ -27,7 +26,7 @@ int main(int argc, char *argv[]) {
 
     struct hostent *host = gethostbyname(argv[1]);
     int port_number = atoi(argv[2]);
-    
+
     if (host == NULL) {
         fputs("Cannot find specified host", stderr);
         return EXIT_FAILURE;

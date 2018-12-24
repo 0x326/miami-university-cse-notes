@@ -49,7 +49,7 @@ int main() {
 
     std::cout << "Output of rbegin and rend: ";
     for (auto ir = vector.rbegin(); ir != vector.rend(); ir++) {
-    std::cout << std::endl;
+        std::cout << std::endl;
         std::cout << *ir << " ";
     }
     std::cout << std::endl;
