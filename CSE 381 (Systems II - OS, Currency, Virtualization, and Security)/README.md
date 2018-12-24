@@ -26,6 +26,50 @@
 [Wikipedia-Data_parallelism]: https://en.wikipedia.org/wiki/Data_parallelism
 [Wikipedia-Pipeline]: https://en.wikipedia.org/wiki/Pipeline_(computing)
 [Wikipedia-Journaling_file_system]: https://en.wikipedia.org/wiki/Journaling_file_system
+[Wikipedia-Multiprocessing]: https://en.wikipedia.org/wiki/Multiprocessing
+[Wikipedia-Multithreading]: https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)
+[Wikipedia-Instruction-level_parallelism]: https://en.wikipedia.org/wiki/Instruction-level_parallelism
+[Wikipedia-Temporal_multithreading]: https://en.wikipedia.org/wiki/Temporal_multithreading
+[Wikipedia-Simultaneous_multithreading]: https://en.wikipedia.org/wiki/Simultaneous_multithreading
+[Wikipedia-Hyper-threading]: https://en.wikipedia.org/wiki/Hyper-threading
+[Wikipedia-CPU_cache-Cache_miss]: https://en.wikipedia.org/wiki/CPU_cache#Cache_miss
+[StackOverflow-A5769803]: https://stackoverflow.com/a/5769803
+[StackOverflow-A8004250]: https://stackoverflow.com/a/8004250
+[StackOverflow-A10279752]: https://stackoverflow.com/a/10279752
+[YouTube-ehyO7mxeU74]: https://youtu.be/ehyO7mxeU74
+[StackOverflow-A32941238]: https://stackoverflow.com/a/32941238
+[StackOverflow-A8514943]: https://stackoverflow.com/a/8514943
+[Serverfault-A38817]: https://serverfault.com/a/38817
+[StackOverflow-A12769035]: https://stackoverflow.com/a/12769035
+[StackOverflow-A2109363]: https://stackoverflow.com/a/2109363
+[Linux-kernel-ext4]: https://www.kernel.org/doc/html/latest/filesystems/ext4/index.html
+[Unix-StackExchange-A153640]: https://unix.stackexchange.com/a/153640
+[YouTube-2quKyPnUShQ]: https://youtu.be/2quKyPnUShQ
+[StackOverflow-A17478535]: https://stackoverflow.com/a/17478535
+[Wikipedia-Fragmentation]: https://en.wikipedia.org/wiki/Fragmentation_(computing)
+[Wikipedia-Memory_segmentation]: https://en.wikipedia.org/wiki/Memory_segmentation
+[Wikipedia-Segmentation_fault]: https://en.wikipedia.org/wiki/Segmentation_fault
+[Wikipedia-Core_dump]: https://en.wikipedia.org/wiki/Core_dump
+[StackOverflow-Q16643180]: https://stackoverflow.com/q/16643180
+[StackOverflow-A40002566]: https://stackoverflow.com/a/40002566
+[Wikipedia-Page_table]: https://en.wikipedia.org/wiki/Page_table
+[Wikipedia-Dirty_bit]: https://en.wikipedia.org/wiki/Dirty_bit
+[Wikipedia-Paging]: https://en.wikipedia.org/wiki/Paging
+[Wikipedia-Page_Size_Extension]: https://en.wikipedia.org/wiki/Page_Size_Extension
+[Wikipedia-CPUID]: https://en.wikipedia.org/wiki/CPUID
+[Wikipedia-Wait-for_graph]: https://en.wikipedia.org/wiki/Wait-for_graph
+[Wikipedia-Round-robin_scheduling]: https://en.wikipedia.org/wiki/Round-robin_scheduling
+[Wikipedia-Multilevel_queue]: https://en.wikipedia.org/wiki/Multilevel_queue
+[Wikipedia-Multilevel_feedback_queue]: https://en.wikipedia.org/wiki/Multilevel_feedback_queue
+[StackOverflow-A4800535]: https://stackoverflow.com/a/4800535
+[Unsafe_state!=Deadlock]: https://defuse.ca/blog/why-unsafe-state-deadlock.html
+[Computer-Science-StackExchange-A45149]: https://cs.stackexchange.com/a/45149
+[StackOverflow-A247026]: https://stackoverflow.com/a/247026
+[StackOverflow-A19194580]: https://stackoverflow.com/a/19194580
+[Wikipedia-Cache_replacement_policies]: https://en.wikipedia.org/wiki/Cache_replacement_policies
+[Wikipedia-Page]: https://en.wikipedia.org/wiki/Page_(computer_memory)
+[Wikipedia-Bélády's_anomaly]: https://en.wikipedia.org/wiki/B%C3%A9l%C3%A1dy's_anomaly
+[Unix-StackExchange-A3587]: https://unix.stackexchange.com/a/3587
 
 # CSE 381: Systems II - OS, Currency, Virtualization, and Security
 
@@ -75,54 +119,55 @@
 
     - [Data parallelism][Wikipedia-Data_parallelism]
     - [Task parallelism][Wikipedia-Task_parallelism]
+    - [Instruction-level parallelism][Wikipedia-Instruction-level_parallelism]
 
 - [CPU pipeline][Wikipedia-Pipeline]
 - [Journaling file system][Wikipedia-Journaling_file_system]
+- [Multiprocessing][Wikipedia-Multiprocessing]
+- [Multithreading][Wikipedia-Multithreading]
 
-## Helpful links
+    - [Temporal multithreading][Wikipedia-Temporal_multithreading]
+    - [Simultaneous multithreading][Wikipedia-Simultaneous_multithreading]
 
-- https://stackoverflow.com/a/5769803
-- https://stackoverflow.com/a/8004250
-- https://stackoverflow.com/a/10279752
-- https://youtu.be/ehyO7mxeU74
-- https://en.wikipedia.org/wiki/Multiprocessing
-- https://en.wikipedia.org/wiki/Multithreading_(computer_architecture)
-- https://en.wikipedia.org/wiki/Data_parallelism
-- https://en.wikipedia.org/wiki/Task_parallelism
-- https://en.wikipedia.org/wiki/Instruction-level_parallelism
-- https://en.wikipedia.org/wiki/Temporal_multithreading
-- https://en.wikipedia.org/wiki/Simultaneous_multithreading
-- https://en.wikipedia.org/wiki/Pipeline_(computing)
-- https://en.wikipedia.org/wiki/Hyper-threading
-- https://en.wikipedia.org/wiki/CPU_cache#Cache_miss
-- https://stackoverflow.com/a/32941238
-- https://stackoverflow.com/a/8514943
-- https://serverfault.com/a/38817
-- https://stackoverflow.com/a/12769035
-- https://stackoverflow.com/a/2109363
-- https://www.kernel.org/doc/html/latest/filesystems/ext4/index.html
-- https://unix.stackexchange.com/a/153640
-- https://youtu.be/2quKyPnUShQ
-- https://stackoverflow.com/a/17478535
-- https://en.wikipedia.org/wiki/Fragmentation_(computing)
-- https://en.wikipedia.org/wiki/Memory_segmentation
-- https://en.wikipedia.org/wiki/Segmentation_fault
-- https://en.wikipedia.org/wiki/Core_dump
-- https://stackoverflow.com/q/16643180
-- https://stackoverflow.com/a/40002566
-- https://en.wikipedia.org/wiki/Page_table
-- https://en.wikipedia.org/wiki/Dirty_bit
-- https://en.wikipedia.org/wiki/Paging
-- https://en.wikipedia.org/wiki/Page_Size_Extension
-- https://en.wikipedia.org/wiki/CPUID
-- https://en.wikipedia.org/wiki/Wait-for_graph
-- https://en.wikipedia.org/wiki/Round-robin_scheduling
-- https://en.wikipedia.org/wiki/Multilevel_queue
-- https://en.wikipedia.org/wiki/Multilevel_feedback_queue
-- https://stackoverflow.com/a/4800535
-- https://defuse.ca/blog/why-unsafe-state-deadlock.html
-- https://cs.stackexchange.com/a/45149
-- https://stackoverflow.com/a/247026
-- https://stackoverflow.com/a/19194580
-- https://en.wikipedia.org/wiki/Cache_replacement_policies
-- https://en.wikipedia.org/wiki/Page_(computer_memory)
+- [Hyper threading][Wikipedia-Hyper-threading]
+- [Cache miss][Wikipedia-CPU_cache-Cache_miss]
+- [Fragmentation][Wikipedia-Fragmentation]
+- [Memory segmentation][Wikipedia-Memory_segmentation]
+- [Segmentation fault][Wikipedia-Segmentation_fault]
+- [Core dump][Wikipedia-Core_dump]
+- [Page table][Wikipedia-Page_table]
+- [Dirty bit][Wikipedia-Dirty_bit]
+- [Paging][Wikipedia-Paging]
+- [Page Size Extension][Wikipedia-Page_Size_Extension]
+- [CPUID][Wikipedia-CPUID]
+- [Wait-for graph][Wikipedia-Wait-for_graph]
+- [Round-robing scheduling][Wikipedia-Round-robin_scheduling]
+- [Multilevel queue][Wikipedia-Multilevel_queue]
+- [Multilevel feedback queue][Wikipedia-Multilevel_feedback_queue]
+- [Cache replacement policies][Wikipedia-Cache_replacement_policies]
+- [Page][Wikipedia-Page]
+- [Bélády's_anomaly][Wikipedia-Bélády's_anomaly]
+
+## Helpful Links
+
+- [`execvp` vs. `execlp`][StackOverflow-A5769803]
+- [How to compare C-strings][StackOverflow-A8004250]
+- [How to modify C-strings][StackOverflow-A10279752]
+- [Video: Understanding Amdalh's Law][YouTube-ehyO7mxeU74]
+- [GCC Optimization levels][StackOverflow-A32941238]
+- [`fork()` vs. `pthread_create()`][StackOverflow-A8514943]
+- [`rm(1)` vs. `unlink(1)`][Serverfault-A38817]
+- [inode for `/` is always inode 2][StackOverflow-A12769035]
+- [Why inodes don't count from 0][StackOverflow-A2109363]
+- [`ext4` filesystem][Linux-kernel-ext4]
+- [Why a directory always is referenced by at least 2 inodes][Unix-StackExchange-A153640]
+- [Video: Virtual memory explained][YouTube-2quKyPnUShQ]
+- [Do mobile OSes use swap space?][StackOverflow-A17478535]
+- [Segmented paging vs. paged segmentation][StackOverflow-Q16643180]
+- [Segmentation vs. paging][StackOverflow-A40002566]
+- [Understanding Bélády's anomaly][StackOverflow-A4800535]
+- [Why unsafe states do not necessarily imply deadlock][Unsafe_state!=Deadlock]
+- [Why do unsafe states not necessarily imply deadlock?][Computer-Science-StackExchange-A45149]
+- [HTTP 1.0 vs. HTTP 1.1][StackOverflow-A247026]
+- [How to copy from a Java `InputStream` to an `OutputStream`][StackOverflow-A19194580]
+- [Man page section numbers][Unix-StackExchange-A3587]
