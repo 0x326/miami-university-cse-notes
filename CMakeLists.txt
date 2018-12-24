@@ -84,3 +84,6 @@ add_executable(CSE_381_PARALLELISM_TASK
 
 add_executable(CSE_381_SIMPLE_SHELL
         "CSE 381 (Systems II - OS, Currency, Virtualization, and Security)/Simple Shell/main.c")
+
+add_executable(CSE_381_SIMPLE_SHELL_PIPING
+        "CSE 381 (Systems II - OS, Currency, Virtualization, and Security)/Simple Shell/command-piping.c")
