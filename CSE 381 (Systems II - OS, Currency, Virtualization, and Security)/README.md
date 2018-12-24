@@ -139,7 +139,7 @@
 - [Dirty bit][Wikipedia-Dirty_bit]
 - [Paging][Wikipedia-Paging]
 - [Page Size Extension][Wikipedia-Page_Size_Extension]
-- [CPUID][Wikipedia-CPUID]
+- [`CPUID`][Wikipedia-CPUID]
 - [Wait-for graph][Wikipedia-Wait-for_graph]
 - [Round-robing scheduling][Wikipedia-Round-robin_scheduling]
 - [Multilevel queue][Wikipedia-Multilevel_queue]
