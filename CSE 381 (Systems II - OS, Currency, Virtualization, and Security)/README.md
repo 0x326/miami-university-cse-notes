@@ -146,7 +146,7 @@
 - [Multilevel feedback queue][Wikipedia-Multilevel_feedback_queue]
 - [Cache replacement policies][Wikipedia-Cache_replacement_policies]
 - [Page][Wikipedia-Page]
-- [Bélády's_anomaly][Wikipedia-Bélády's_anomaly]
+- [Bélády's anomaly][Wikipedia-Bélády's_anomaly]
 
 ## Helpful Links
 
