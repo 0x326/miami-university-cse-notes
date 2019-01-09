@@ -230,9 +230,9 @@ public class MyClass {
     public void doStuff(Object obj) {
         // obj could be an Object, but it could be a SpecificSubClass as well
         if (obj instanceof SpecificSubClass) {
-        // If `obj` is a SpecificSubClass, then its variable can be casted to that type
-        // If it is not, the following will produce an exception
-        SpecificSubClass newObj = (SpecificSubClass) obj;
+            // If `obj` is a SpecificSubClass, then its variable can be casted to that type
+            // If it is not, the following will produce an exception
+            SpecificSubClass newObj = (SpecificSubClass) obj;
         }
     }
 }
